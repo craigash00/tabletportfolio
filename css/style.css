@@ -1,0 +1,266 @@
+#head{
+	padding: 20px 8%;
+	text-align: center;
+}
+h1{
+	padding-top: 60px;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -20px;
+  }
+  .skip a:focus{
+    top: 70px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+.nav-link.active{
+	color: blue !important;
+	font-weight: bolder;
+	border: 2px solid blue;
+}
+  .grid-container{
+	padding: 0px 50px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-row-gap: 15px;
+	grid-column-gap: 15px;
+  
+  }
+  .erie{
+	grid-column: 1/span 1;
+	grid-row: 2/span 1;
+  }
+  
+  .erie-image{
+	grid-column: 1/ span 1;
+	max-height: 300px;
+	overflow: hidden;
+	grid-row: 1/ span 1;
+	border: 8px ridge lightblue;
+  }
+  .michigan-image{
+	grid-column: 1/ span 1;
+	max-height: 300px;
+	overflow: hidden;
+	grid-row: 3/ span 1;
+	border: 8px ridge lightblue;
+  }
+  
+  .michigan{
+	grid-column: 1/span 1;
+	grid-row: 4/span 1;
+  }
+  
+  .superior-image{
+	grid-column: 1/ span 1;
+	max-height: 300px;
+	overflow: hidden;
+	grid-row: 5/ span 1;
+	border: 8px ridge lightblue;
+  }
+  
+  .superior{
+	grid-column: 1/span 1;
+	grid-row: 6/ span 1;
+  }
+  
+  .huron{
+	grid-column: 1/span 1;
+	grid-row: 8/span 1;
+  }
+  
+  .huron-image{
+	grid-column: 1/ span 1;
+	max-height: 300px;
+	overflow: hidden;
+	grid-row: 7/span 1;
+	border: 8px ridge lightblue;
+  }
+  
+  .ontario{
+	grid-column: 1/ span 1;
+	grid-row: 10/span 1;
+  }
+  
+  .ontario-image{
+	grid-column: 1/ span 1;
+	max-height: 300px;
+	overflow: hidden;
+	grid-row: 9/span 1;
+	border: 8px ridge lightblue;
+  }
+  #intro{
+	  text-align: center;
+	  padding: 20px 8%;
+  }
+  .title{
+	  text-align: center;
+	  font-size: 30px;
+	  font-weight: bold;
+	  text-decoration: underline;
+      text-decoration-color: lightblue;
+  }
+  .highlight{
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+  }
+
+  .text{
+	  display: block;
+	  font-size: 20px;
+	  text-align: center;
+	  padding: 5px 30px;
+  }
+  .chead{
+	padding: 10px 30px
+  }
+  .ctext{
+	  padding: 0px 40px;
+
+  }
+
+@media screen and (min-width: 800px){
+	.grid-container{
+		padding: 0px 80px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto auto;
+	  
+	  }
+	  .erie{
+		grid-column: 2/span 1;
+		grid-row: 1/1;
+	  }
+	  
+	  .erie-image{
+		grid-column: 1/-1;
+		max-width: 50%;
+		grid-row: 1/1;
+	  }
+	.michigan-image{
+		grid-column: 2/2;
+		grid-row: 2/2;
+	  }
+	  
+	  .michigan{
+		grid-column: 1/span 1;
+		grid-row: 2/2;
+	  }
+	  
+	  .superior-image{
+		grid-column: 1/-1;
+		max-width: 50%;
+		grid-row: 3/3;
+	  }
+	  
+	  .superior{
+		grid-column: 2/span 1;
+		grid-row: 3/3;
+	  }
+	  
+	  .huron{
+		grid-column: 1/span 1;
+		grid-row: 4/4;
+	  }
+	  
+	  .huron-image{
+		grid-column: 2/2;
+		grid-row: 4/4;
+	  }
+	  
+	  .ontario{
+		grid-column: 2/span 1;
+		grid-row: 5/5;
+	  }
+	  
+	  .ontario-image{
+		grid-column: 1/-1;
+		max-width: 50%;
+		grid-row: 5/5;
+	  }
+
+	  #intro{
+		text-align: center;
+		padding: 20px 8%;
+	}
+	#title{
+		text-align: left;
+		font-size: 50px;
+		font-weight: bold;
+		padding-left: 60px;
+		text-decoration: underline;
+		text-decoration-color: lightblue;
+	}
+	.highlight{
+	  display: inline;
+	  max-width: 600px;
+	  padding-left: 60px;
+	  padding-bottom: 15px;
+	}
+  
+	#text{
+		display: inline;
+		vertical-align: top;
+		padding-left: 5px;
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+  
+.row1 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+  }
+
+.column1 {
+	flex: 100%;
+	text-align: center;
+}
+
+.column1 img{
+	max-width: 70%;
+    max-height: 400px;
+	padding: 5px;
+}
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (min-width: 800px) {
+
+
+	.column1 {
+		flex: 33%;
+		max-width: 33%;
+		padding: 0 4px;
+	  }
+	  
+	  .column1 img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+		max-width: 100%;
+		padding: 0px;
+	  }
+
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }  */
