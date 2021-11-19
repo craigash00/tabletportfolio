@@ -5,7 +5,9 @@
 h1{
 	padding-top: 60px;
 }
-
+.pictext{
+	display: none;
+}
 .skip a{
     background: white;
     left: 0;
@@ -34,6 +36,7 @@ h1{
 	grid-template-rows: auto auto auto auto auto;
 	grid-row-gap: 15px;
 	grid-column-gap: 15px;
+	font-size: 15px;
   
   }
   .erie{
@@ -130,7 +133,17 @@ h1{
 
   }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 768px){
+	img {
+		max-width: 182%;
+	}
+
+	#one {
+		height: 210px;
+	}
+	#three {
+		height: 252px;
+	}
 	.grid-container{
 		padding: 0px 80px;
 		grid-template-columns: 1fr 1fr;
@@ -257,6 +270,23 @@ h1{
 
   }
 
+  @media screen and (min-width: 1000px) {
+	.pictext{
+		display: flex;
+		align-items: center;
+		width: auto;
+		height: 200px;
+		border: 2px solid blue;
+		margin-top: 8px;
+		text-align: center;
+		font-size: 30px;
+		color: darkblue;
+		background: aliceblue;
+		font-style: oblique;
+		padding: 10px;
+	}
+	  
+  }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   /* @media screen and (max-width: 600px) {
 	.column {
