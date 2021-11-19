@@ -215,7 +215,8 @@ h1{
 		text-decoration-color: lightblue;
 	}
 	.highlight{
-	  display: inline;
+	  display: block;
+	  margin: 0px auto;
 	  max-width: 600px;
 	  padding-left: 60px;
 	  padding-bottom: 15px;
